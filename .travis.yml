@@ -7,6 +7,13 @@ matrix:
     env: TOXENV=py2
   - python: 3.6
     env: TOXENV=py3
+#Power Jobs added.    
+  - python: 2.7
+    arch: ppc64le
+    env: TOXENV=py2
+  - python: 3.6
+    arch: ppc64le
+    env: TOXENV=py3
 #before_install:
   # Install tor and chutney if doing functional tests
   #- if [[ $TEST == 'functional' ]]; then ./test/scripts/install-tor.sh; fi
